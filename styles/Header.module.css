@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  border-radius: 30px;
+  width: 90vw;
+  padding: 13px 2.5em;
+  border-radius: 0px 0px 25px 25px;
+  z-index: 10;
+}
+
+.content{
+  display: flex;
+  gap: 4em;
+}
+
+.liText{
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  line-height: 157%;
+  cursor: pointer;
+  transition: all ease-in-out .4s;
+}
+
+.liText:hover{
+  color: brown;
+}
