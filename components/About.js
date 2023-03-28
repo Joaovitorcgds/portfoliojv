@@ -1,9 +1,22 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import styles from "../styles/About.module.css";
 import imagePerson from "../public/image3.png";
 import imageLinkedin from "../public/linkedin2.png";
 import imageGithub from "../public/github3.png";
+
+const imageLink = [
+	{
+		link: "https://github.com/Joaovitorcgds",
+		image: imageGithub,
+		nome: "Logo Github"
+	},
+	{
+		link: "https://www.linkedin.com/in/joaovitorcgds/",
+		image: imageLinkedin,
+		nome: "Logo Linkedin"
+	}
+];
 
 export default function About(){
 	return(
@@ -13,15 +26,16 @@ export default function About(){
 					<p className={styles.title}>Olá, eu sou João Vitor</p>
 					<h1 className={styles.subTitleAbout}>Sou desenvolvedor Frontend Web usando ReactJs e NodeJs</h1>
 					<div className={styles.socialNetworks}>
-						<a href="https://github.com/Joaovitorcgds" target="_blank" rel="noreferrer">
-							<Image src={imageGithub} width={30}/>
-						</a>
-						<a href="https://www.linkedin.com/in/joaovitorcgds/" target="_blank" rel="noreferrer">
-							<Image src={imageLinkedin} width={30}/>
-						</a>
+						{imageLink.map((link) => {
+							return(
+								<a href={link.link} target="_blank" rel="noreferrer" key={link.nome}>
+									<Image src={link.image} alt={link.nome} width={30}/>
+								</a>
+							);
+						})}
 					</div>
 				</div>
-				<Image src={imagePerson} alt="Imagem da pessoa" width={288}/>
+				<Image priority src={imagePerson} alt="Imagem da pessoa" width={288}/>
 			</div>
 			<div className={styles.containerButtonsInfo}>
 				<button className={styles.buttonInfo}>Download CV</button>
