@@ -1,19 +1,20 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Image from "next/image";
 import { Code, CheckFat } from "@phosphor-icons/react";
 import styles from "../../styles/LayoutCSS/Card.module.css";
 import block from "../../public/block.png";
 
 CardProjects.propTypes = {
-	project: {
-		nome: "string",
-		skills: ["string"],
-		description: "string",
-		links: {
-			href: "string",
-			name: "string"
-		},
-	}
+	project: PropTypes.shape({
+		nome: PropTypes.string.isRequired,
+		skills: PropTypes.array.isRequired,
+		description: PropTypes.string.isRequired,
+		links: PropTypes.arrayOf(PropTypes.shape({
+			href: PropTypes.string.isRequired,
+			name: PropTypes.string.isRequired,
+		})),
+	})
 };
 
 export default function CardProjects({project}){
