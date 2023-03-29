@@ -1,0 +1,21 @@
+.containerLastProjects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  margin-top: 60px;
+}
+
+.titleLastProjects{
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 28px;
+}
+
+.contentCardProjects{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,60 @@
+.containerCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.containerSkillsProject{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+.boxSkills{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  padding: 2px 5px;
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(140deg, rgba(177,210,218,1) 20%, rgb(190, 207, 255) 80%) border-box;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.descriptionSkillsProject{
+  font-size: 16px;
+  line-height: 150%; 
+}
+
+.containerLinksProject{
+  display: flex;
+  margin: 25px 0 25px 0;
+  align-items: center;
+  gap: 15px;
+}
+
+.linksProjectSkill{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(0, 0, 0, .6);
+  font-weight: 700;
+  padding: 7px 8px 5px;
+  border-radius: 10px;
+  transition: all ease-in-out .4s;
+}
+
+.linksProjectSkill:hover{
+  color: white;
+  background-color: #b6d1e8;
+}
