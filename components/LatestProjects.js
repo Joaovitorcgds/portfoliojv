@@ -1,4 +1,3 @@
-import React from "react";
 import CardProjects from "./layout/CardProjects";
 import styles from "../styles/LastProjects.module.css";
 import { projectsUtil } from "./util/projectsUtil";

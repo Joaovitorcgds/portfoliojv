@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import styles from "../styles/Header.module.css";
 import ImageContent from "../public/icon3.png";
