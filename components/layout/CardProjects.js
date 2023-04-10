@@ -1,9 +1,10 @@
-import React from "react";
 import PropTypes from "prop-types";
+import { useEffect } from "react";
 import Image from "next/image";
 import { Code, CheckFat } from "@phosphor-icons/react";
 import styles from "../../styles/LayoutCSS/Card.module.css";
-import block from "../../public/block.png";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 CardProjects.propTypes = {
 	project: PropTypes.shape({
@@ -14,13 +15,30 @@ CardProjects.propTypes = {
 			href: PropTypes.string.isRequired,
 			name: PropTypes.string.isRequired,
 		})),
+		images: PropTypes.arrayOf(PropTypes.shape({
+			img: PropTypes.object.isRequired,
+			name: PropTypes.string.isRequired
+		}))
 	})
 };
 
 export default function CardProjects({project}){
+
+	useEffect(() => {
+		console.log(project.images);
+	}, []);
+
 	return(
 		<div key={project.nome} className={styles.containerCard}>
-			<Image src={block} alt="ilustrar imagem" width={380}/>
+			<Carousel showThumbs={false}>
+				{
+					project.images.map((element) => {
+						return(
+							<Image key={element.nome} src={element.img} alt="ilustrar imagemas" width={380}/>
+						);
+					})
+				}
+			</Carousel>
 			<div>
 				<h2>{project.nome}</h2>
 				<div className={styles.containerSkillsProject}>

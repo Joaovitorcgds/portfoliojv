@@ -1,9 +1,9 @@
-import imgJS from "../../public/javascript.png";
-import imgReact from "../../public/react.PNG";
-import imgNode from "../../public/node.PNG";
-import imgNext from "../../public/next.png";
-import imgSQL from "../../public/sql.PNG";
-import imgSupabase from "../../public/supabase.PNG";
+import imgJS from "../../public/tech/javascript.png";
+import imgReact from "../../public/tech/react.PNG";
+import imgNode from "../../public/tech/node.PNG";
+import imgNext from "../../public/tech/next.png";
+import imgSQL from "../../public/tech/sql.PNG";
+import imgSupabase from "../../public/tech/supabase.PNG";
 
 export const skillsUtil = [
 	{

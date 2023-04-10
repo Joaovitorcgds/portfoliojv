@@ -1,3 +1,7 @@
+import imgNmx1 from "../../public/imgProjects/imgNmxCourse1.png";
+import imgNmx2 from "../../public/imgProjects/imgNmxCourse2.png";
+import imgNmx3 from "../../public/imgProjects/imgNmxCourse15.png";
+
 export const projectsUtil = [
 	{
 		nome: "Novamix Cursos",
@@ -18,6 +22,20 @@ export const projectsUtil = [
 				href: "https://nmx-course.vercel.app/",
 				name: "Demo"
 			}
+		],
+		images: [
+			{
+				img: imgNmx1,
+				name: "Primeira imagem do projeto Novamix Courses" 
+			},
+			{
+				img: imgNmx2,
+				name: "Segunda imagem do projeto Novamix Courses"
+			},
+			{
+				img: imgNmx3,
+				name: "Terceira imagem do projeto Novamix Courses"
+			}
 		]
 	},
 	{
@@ -37,6 +55,20 @@ export const projectsUtil = [
 			{
 				href: "https://image-generator-ecru.vercel.app/",
 				name: "Demo"
+			}
+		],
+		images: [
+			{
+				img: imgNmx1,
+				name: "Primeira imagem do projeto Novamix Courses" 
+			},
+			{
+				img: imgNmx2,
+				name: "Segunda imagem do projeto Novamix Courses"
+			},
+			{
+				img: imgNmx3,
+				name: "Terceira imagem do projeto Novamix Courses"
 			}
 		]
 	}
