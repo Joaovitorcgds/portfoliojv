@@ -3,23 +3,34 @@
   justify-content: center;
   align-items: center;
   width: 90vw;
-  padding: 60px 25px;
-  margin-top: 65px;
+  padding: 3.75rem 1.563rem;
+  margin-top: 4.063rem;
   background-color: white;
-  border-radius: 25px ;
+  border-radius: 1.563rem;
+}
+
+.imageAbout{
+  width: 28.125rem;
+  height: auto;
 }
 
 .contentAbout{
-  height: 385px;
+  height: 24.063rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items:center;
 }
 .textAbout{
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 135%;
   /* text-align: justify; */
   font-weight: 500;
   color: rgba(0, 0, 0, 0.8);;
+}
+
+@media (max-width: 768px){
+  .containerAbout{
+    flex-wrap: wrap-reverse;
+  }
 }

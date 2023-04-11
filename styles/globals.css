@@ -25,3 +25,21 @@ a {
   text-decoration: none;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  html{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 520px) {
+  html{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  html{
+    font-size: 10px;
+  }
+}

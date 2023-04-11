@@ -3,30 +3,31 @@
   flex-direction: column;
   background-color: white;
   box-shadow: 4px 4px 100px 4px rgba(0, 0, 0, 0.25);
-border-radius: 30px;
+  border-radius: 1.563rem;
   width: 90vw;
-  padding: 140px 3.5em 0 3.5em;
-  border-radius: 25px;
+  padding: 8.75rem 3.5rem 0 3.5rem;
 }
 
 .containerInfo{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 55px;
+  margin-bottom: 3.438rem;
 }
 
+
+
 .content{
-  width: 600px;
+  width: 100%;
 }
 
 .title{
   font-weight: 700;
-  font-size: 42px;
+  font-size: 2.625rem;
   line-height: 125%;
   letter-spacing: -0.03em;
   color: #211b12e5;
-  margin: 10px 0;
+  margin: 0.625rem 0;
   padding: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -55,7 +56,7 @@ border-radius: 30px;
 
 .subTitlePresentation{
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 110%;
   letter-spacing: -0.03em;
   color: rgba(0, 0, 0, 0.6);
@@ -63,7 +64,7 @@ border-radius: 30px;
 
 .subTitlePresentation2{
   font-weight: 600;
-  font-size: 25px;
+  font-size: 1.563rem;
   line-height: 110%;
   letter-spacing: -0.03em;
   color: rgba(0, 0, 0, 0.6);
@@ -71,12 +72,12 @@ border-radius: 30px;
 
 .socialNetworks{
   display: flex;
-  gap: 25px;
-  margin-top: 35px;
+  gap: 1.563rem;
+  margin-top: 2.188rem;
 }
 
 .animationImage{
-  width: 450px;
+  width: 28.125rem;
   height: auto;
   animation: go-back 1s infinite alternate ease-in-out;
 }
@@ -93,16 +94,16 @@ from {
 .containerButtonsInfo{
   display: flex;
   justify-content: space-between;
-  gap: 35px;
+  gap: 2.188rem;
   width: 35%;
-  margin: 50px 0px;
+  margin: 3.125rem 0px;
 }
 
 .buttonInfo{
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px 25px;
+  gap: 0.625rem;
+  padding: 0.625rem 1.563rem;
   color: rgba(0,0,0,.6);
   font-weight: 600;
   background: linear-gradient(white, white) padding-box,
@@ -117,4 +118,34 @@ from {
 .buttonInfo:hover{
   color: brown;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media (max-width: 768px){
+  .container{
+    padding-top: 5.75rem;
+    align-items: center;
+  
+  }
+
+  .containerInfo{
+    gap: 1.563rem;
+    flex-wrap: wrap;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .animationImage{
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 520px) {
+  .animationImage{
+    width: 25rem;
+  }
 }

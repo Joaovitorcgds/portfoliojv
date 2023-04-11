@@ -5,21 +5,22 @@
   position: fixed;
   top: 0;
   background-color: white;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   width: 90vw;
-  padding: 13px 2.5em;
-  border-radius: 0px 0px 25px 25px;
+  padding: 0.813rem 2.5em;
+  border-radius: 0px 0px 1.563rem 1.563rem;
   z-index: 10;
 }
 
 .content{
   display: flex;
-  gap: 6em;
+  gap: 6rem;
 }
 
 .liText{
   color: rgba(0, 0, 0, 0.6);
   font-weight: 700;
+  font-size: 1rem;
   line-height: 157%;
   cursor: pointer;
   transition: all ease-in-out .4s;
@@ -27,4 +28,12 @@
 
 .liText:hover{
   color: brown;
+}
+
+
+@media (max-width: 520px) {
+  .content{
+    display: flex;
+    gap: 3rem;
+  }
 }
