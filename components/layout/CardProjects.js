@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import { useEffect } from "react";
 import Image from "next/image";
 import { Code, CheckFat } from "@phosphor-icons/react";
 import styles from "../../styles/LayoutCSS/Card.module.css";
@@ -23,10 +22,6 @@ CardProjects.propTypes = {
 };
 
 export default function CardProjects({project}){
-
-	useEffect(() => {
-		console.log(project.images);
-	}, []);
 
 	return(
 		<div className={styles.containerCard}>

@@ -16,7 +16,7 @@ export const projectsUtil = [
 			"Supabase",
 			"SQL"
 		],
-		description: "Novamix Cursos é uma aplicação full stack web construída com a finalidade de exibir para os clientes os cursos disponíveis na empresa Nova Mix Food Service.",
+		description: "Essa é uma aplicação que exibe os cursos para os clientes e o administrador pode cadastrá-lo na aula disponível na empresa Nova Mix Food Service.",
 		links: [
 			{
 				href: "https://github.com/Joaovitorcgds/nmx-course",
