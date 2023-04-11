@@ -29,17 +29,17 @@ export default function CardProjects({project}){
 	}, []);
 
 	return(
-		<div key={project.nome} className={styles.containerCard}>
-			<Carousel showThumbs={false}>
+		<div className={styles.containerCard}>
+			<Carousel showThumbs={false} autoPlay={true} swipeable={true} transitionTime={3} infiniteLoop={true}>
 				{
 					project.images.map((element) => {
 						return(
-							<Image key={element.nome} src={element.img} alt="ilustrar imagemas" width={380}/>
+							<Image style={{borderRadius: "10px 10px 0 0", width: "100%", height: "auto"}} key={element.img} src={element.img} alt="ilustrar imagens"/>
 						);
 					})
 				}
 			</Carousel>
-			<div>
+			<div style={{padding:"10px"}}>
 				<h2>{project.nome}</h2>
 				<div className={styles.containerSkillsProject}>
 					{project.skills.map((skill) => {
@@ -58,9 +58,11 @@ export default function CardProjects({project}){
 				<div className={styles.containerLinksProject}>
 					{project.links.map((link) => {
 						return(
-							<a href={link.href} key={link.name} className={styles.linksProjectSkill} target="_blank" rel="noreferrer"> 
-								{link.name === "Code" ? <Code size={28} weight="bold" /> : <CheckFat size={28} weight="bold" />}
-								{link.name}
+							<a href={link.href} key={link.name} target="_blank" rel="noreferrer">
+								<button className={styles.linksProjectSkill}>
+									{link.name === "Code" ? <Code size={28} weight="regular" /> : <CheckFat size={28} weight="regular" />}
+									<span className={styles.spanProjectSkill}>{link.name}</span>
+								</button> 
 							</a>
 						);
 					})}

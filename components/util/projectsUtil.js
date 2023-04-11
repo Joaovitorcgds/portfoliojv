@@ -1,6 +1,10 @@
 import imgNmx1 from "../../public/imgProjects/imgNmxCourse1.png";
 import imgNmx2 from "../../public/imgProjects/imgNmxCourse2.png";
-import imgNmx3 from "../../public/imgProjects/imgNmxCourse15.png";
+import imgNmx3 from "../../public/imgProjects/imgNmxCourse3.png";
+
+import imgGenerator1 from "../../public/imgProjects/imgGenerator1.png";
+import imgGenerator2 from "../../public/imgProjects/imgGenerator2.png";
+import imgGenerator3 from "../../public/imgProjects/imgGenerator3.png";
 
 export const projectsUtil = [
 	{
@@ -25,7 +29,7 @@ export const projectsUtil = [
 		],
 		images: [
 			{
-				img: imgNmx1,
+				img: imgNmx3,
 				name: "Primeira imagem do projeto Novamix Courses" 
 			},
 			{
@@ -33,7 +37,7 @@ export const projectsUtil = [
 				name: "Segunda imagem do projeto Novamix Courses"
 			},
 			{
-				img: imgNmx3,
+				img: imgNmx1,
 				name: "Terceira imagem do projeto Novamix Courses"
 			}
 		]
@@ -59,16 +63,16 @@ export const projectsUtil = [
 		],
 		images: [
 			{
-				img: imgNmx1,
-				name: "Primeira imagem do projeto Novamix Courses" 
+				img: imgGenerator1,
+				name: "Primeira imagem do projeto gerador de capa para o linkedin" 
 			},
 			{
-				img: imgNmx2,
-				name: "Segunda imagem do projeto Novamix Courses"
+				img: imgGenerator2,
+				name: "Segunda imagem do projeto gerador de capa para o linkedin"
 			},
 			{
-				img: imgNmx3,
-				name: "Terceira imagem do projeto Novamix Courses"
+				img: imgGenerator3,
+				name: "Terceira imagem do projeto gerador de capa para o linkedin"
 			}
 		]
 	}

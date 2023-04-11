@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Header from "@/components/Header";
 import styles from "../styles/Home.module.css";
-import About from "@/components/About";
+import Presentation from "@/components/Presentation";
 import Skills from "@/components/Skills";
 import LatestProjects from "@/components/LatestProjects";
+import About from "@/components/About";
 
 export default function Home() {
 	return (
@@ -16,8 +17,9 @@ export default function Home() {
 			</Head>
 			<main className={styles.main}>
 				<Header/>
-				<About/>
+				<Presentation/>
 				<Skills/>
+				<About/>
 				<LatestProjects/>
 			</main>
 		</>

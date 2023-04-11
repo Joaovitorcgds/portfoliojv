@@ -20,3 +20,22 @@
   flex-wrap: wrap;
   gap: 25px;
 }
+
+.containerMoreProject{
+  margin-top: 25px;
+  align-self: flex-end;
+}
+
+.linkMoreProjects{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #211b12e5;
+}
+
+.linkMoreProjects:hover{
+  cursor: pointer;
+}
+
