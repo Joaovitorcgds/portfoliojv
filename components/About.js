@@ -1,45 +1,23 @@
 import Image from "next/image";
-import styles from "../styles/About.module.css";
-import imagePerson from "../public/image3.png";
-import imageLinkedin from "../public/linkedin2.png";
-import imageGithub from "../public/github3.png";
+import imgGeek from "../public/geek.png";
 
-const imageLink = [
-	{
-		link: "https://github.com/Joaovitorcgds",
-		image: imageGithub,
-		nome: "Logo Github"
-	},
-	{
-		link: "https://www.linkedin.com/in/joaovitorcgds/",
-		image: imageLinkedin,
-		nome: "Logo Linkedin"
-	}
-];
+import styles from "../styles/About.module.css";
 
 export default function About(){
 	return(
-		<section className={styles.container}>
-			<div className={styles.containerInfo}>
-				<div className={styles.content}>
-					<p className={styles.title}>Olá, eu sou João Vitor</p>
-					<h1 className={styles.subTitleAbout}>Sou desenvolvedor Frontend Web usando ReactJs e NodeJs</h1>
-					<div className={styles.socialNetworks}>
-						{imageLink.map((link) => {
-							return(
-								<a href={link.link} target="_blank" rel="noreferrer" key={link.nome}>
-									<Image src={link.image} alt={link.nome} width={30}/>
-								</a>
-							);
-						})}
-					</div>
+		<>
+			<div className={styles.containerAbout}>
+				<Image src={imgGeek} alt="Imagem ilustrativa sobre mundo geek" width={450}/>
+				<div className={styles.contentAbout}>
+					<h1 style={{color: "#211b12e5"}}>Sobre mim</h1>
+					<p className={styles.textAbout}>Sou apaixonado pelo universo geek e programação. Atualmente, estou cursando Ciência da Computação na modalidade EAD pela Faculdade Descomplica e me esforço para me manter atualizado assistindo conteúdos relevantes no YouTube e fazendo projetos práticos que aplicam conceitos aprendidos em casos reais. Estou totalmente disposto a enfrentar novos desafios e me adaptar a novas tecnologias.
+						<br/>
+						<br/>
+          Meu foco atual é a programação web, em particular o desenvolvimento Front-end usando as tecnologias Javascript com ReactJs e NodeJs, que proporcionam o melhor desempenho e uma excelente experiência do usuário. Além disso, sempre priorizo a escrita de códigos limpos (clean code), visando facilitar futuras modificações e a legibilidade do código.</p>
+
+					{/* <p className={styles.textAbout}>Procuro manter contato com pessoas da área de programação para ajudar aqueles que estão iniciando e para esclarecer dúvidas sobre qualquer conteúdo. Essas conversas também me proporcionam a oportunidade de aprender algo novo e de me conectar com outros profissionais da área.</p> */}
 				</div>
-				<Image priority src={imagePerson} alt="Imagem da pessoa" width={288}/>
 			</div>
-			<div className={styles.containerButtonsInfo}>
-				<button className={styles.buttonInfo}>Download CV</button>
-				<button className={styles.buttonInfo}>Vamos conversar</button>
-			</div>
-		</section>
+		</>
 	);
 }
