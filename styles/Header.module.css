@@ -30,10 +30,27 @@
   color: brown;
 }
 
+@media (max-width: 700px) {
+  .content{
+    display: flex;
+    gap: 2rem;
+  }
+}
 
 @media (max-width: 520px) {
   .content{
-    display: flex;
     gap: 3rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .content{
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .liText{
+    font-size: 0.875rem;
   }
 }

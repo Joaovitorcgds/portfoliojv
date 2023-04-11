@@ -5,7 +5,7 @@ import styles from "../styles/About.module.css";
 
 export default function About(){
 	return(
-		<section>
+		<section id="about">
 			<div className={styles.containerAbout}>
 				<Image src={imgGeek} alt="Imagem ilustrativa sobre mundo geek" className={styles.imageAbout}/>
 				<div className={styles.contentAbout}>

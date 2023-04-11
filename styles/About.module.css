@@ -4,7 +4,7 @@
   align-items: center;
   width: 90vw;
   padding: 3.75rem 1.563rem;
-  margin-top: 4.063rem;
+  margin-top: 4.5rem;
   background-color: white;
   border-radius: 1.563rem;
 }
@@ -15,22 +15,35 @@
 }
 
 .contentAbout{
-  height: 24.063rem;
+  /* height: 24.063rem; */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 15px;
   align-items:center;
 }
 .textAbout{
   font-size: 1.125rem;
   line-height: 135%;
-  /* text-align: justify; */
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.8);;
+  color: rgba(0, 0, 0, 0.8);
+  height: auto;
 }
 
 @media (max-width: 768px){
   .containerAbout{
     flex-wrap: wrap-reverse;
+    gap: 1rem;
+  }
+
+  .imageAbout{
+    width: 23.75rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px){
+  .imageAbout{
+    width: 20rem;
+    height: auto;
   }
 }

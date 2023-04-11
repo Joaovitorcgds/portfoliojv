@@ -5,8 +5,8 @@ import { projectsUtil } from "./util/projectsUtil";
 
 export default function LatestProjects(){
 	return(
-		<section className={styles.containerLastProjects}>
-			<h1 className={styles.titleLastProjects}>Últimos Projetos</h1>
+		<section  className={styles.containerLastProjects}>
+			<h1 id="lastedProjects" className={styles.titleLastProjects}>Últimos Projetos</h1>
 			<div  className={styles.contentCardProjects}>
 				{projectsUtil.map((project) => {
 					return(

@@ -143,6 +143,12 @@ from {
   }
 }
 
+@media (max-width: 908px){
+  .animationImage{
+    width: 19rem;
+  }
+}
+
 
 @media (max-width: 520px) {
   .animationImage{
